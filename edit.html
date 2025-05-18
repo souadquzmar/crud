@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css"/>
+</head>
+<body>
+
+    <div class="loader-container">
+    <div class="loader"></div>
+    </div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="#">UMS</a>
+                </div>
+                <nav class="d-flex gap-15">
+                    <a href="./index.html">Home</a>
+                    <a href="./create.html">Create</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="edit-user">
+        <div class="text-danger"></div>
+        <div class="container">
+            <div class="row">
+                <h1>Edit User</h1>
+                <form class="create-form">
+                    <input class="userName" name="userName" type="text" placeholder="user name..." required />
+                    <input class="email" name="email" type="email" placeholder="user email..." required/>
+                    <input class="password" name="password" type="password" placeholder="user password..." required/>
+                    <input class="phone" name="phone" type="text" placeholder="user phone..." required/>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./edit.js"></script>
+</body>
+</html>

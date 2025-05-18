@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: calc(100% - 80px);
+    margin:auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: #0044d4d4;
+    padding:15px 0;
+}
+.header a {
+    color: #fff;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.gap-15{
+    gap:15px;
+}
+.gap-10{
+    gap:10px;
+}
+.users{
+    background-color: #f9f9f9;
+    padding:30px 0;
+}
+
+.users table{
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+    text-align: center;
+}
+.users thead{
+    background-color: #0044d4d4;
+}
+.users td {
+    border-bottom: 1px solid #ddd;
+    padding:12px 20px;
+}
+.users th {
+    border-bottom: 1px solid #ddd;
+    padding:12px 20px;
+}
+
+.users tbody tr:hover {
+    background-color:#f1f1f1 ;
+}
+.column{
+    flex-direction: column;
+    background-color:#f1f1f1 ;
+    line-height: 1.5;
+}
+.details-heading{
+    background-color: #0044d4d4;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.user-data{
+    text-align:left;
+}
+.btn{
+    padding : 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-danger{
+    border : 2px solid rgba(255,0,0,.6);
+    color : rgba(255,0,0,.6);
+}
+.btn-primary{
+    border : 2px solid rgba(0,0,255,.6);
+    color : rgba(0,0,255,.6);
+}
+.btn-edit{
+    border : 2px solid #328E6E;
+    color : #328E6E;
+}
+.text-danger{
+    color: red;
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#8F87F1 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#8F87F1);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+  100%{transform: rotate(1turn)}
+}
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(0,0,0,.3);
+}
+.d-none{
+    display: none;
+}
